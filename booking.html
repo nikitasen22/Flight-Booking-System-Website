@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyBooker - Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1>✈️ SkyBooker</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="flights.html">Flights</a>
+      <a href="bookings.html">Bookings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="results page-top-space">
+    <h2>Selected Flight</h2>
+    <div id="selectedFlightCard" class="flight-cards"></div>
+  </section>
+
+  <section class="booking-section">
+    <h2>Passenger Details</h2>
+
+    <div id="passengerForms" class="booking-form"></div>
+
+    <div class="booking-form">
+      <div class="seat-wrapper">
+        <label>Select Seat</label>
+        <div id="seatGrid" class="seat-grid"></div>
+        <input type="text" id="seatNo" placeholder="Selected Seat" readonly />
+      </div>
+
+      <select id="paymentMethod">
+        <option value="">Select Payment Method</option>
+        <option value="UPI">UPI</option>
+        <option value="Card">Card</option>
+        <option value="Net Banking">Net Banking</option>
+      </select>
+
+      <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 SkyBooker. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
